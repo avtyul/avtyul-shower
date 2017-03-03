@@ -1,196 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>RS Conf 2017</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+	<style>
+		.caption a {
+			color: #4b86c2;
+			text-shadow: 0 -1px 0 #1f3f60;
+		}
+
+	</style>
 </head>
+
 <body class="shower list">
 
 	<header class="caption">
-		<h1>RSConf 2017 recap</h1>
-		<p>a.tyuldyukov@corp.mail.ru</p>
+		<h1>RS Conf 2017 recap</h1>
+		<p>
+			<a href="https://github.com/avtyul" target="_blank">Алексей Тюльдюков</a>
+		</p>
 	</header>
 
-	<section class="slide" id="cover">
-		<h2>The Rolling Scopes 2017</h2>
-		<p>Minsk, Belarus</p>
-		<figure>
-			<img src="pictures/RS_logo.jpg" alt="conf logo">
-		</figure>
-		<style>
-			#cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
-				text-align:center;
-				font-size:70px;
-				}
-			#cover p {
-				margin:10px 0 0;
-				text-align:center;
-				color:#FFF;
-				font-style:italic;
-				font-size:20px;
-				}
-				#cover p a {
-					color:#FFF;
-					}
-		</style>
+	<section class="slide">
+		<img class="place" src="pictures/rs_logo.jpg" width="300px">
+		<p class="place" style="top: 520px">Минск '17</p>
 	</section>
 
 	<section class="slide">
-		<h2>Shower key features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+		<h2>Полезные ссылки</h2>
+		<ul>
+			<li><a href="https://2017.conf.rollingscopes.com/" target="_blank">https://2017.conf.rollingscopes.com/</a></li>
+			<li><a href="https://rollingscopes.com/" target="_blank">https://rollingscopes.com/</a></li>
+			<li><a href="https://www.youtube.com/user/therollingscopes" target="_blank">https://www.youtube.com/user/therollingscopes</a></li>
+		</ul>
 	</section>
 
 	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+		<h2>Подробно</h2>
+		<ul>
+			<li><a href="#5">ES 2016, 2017 and beyond</a></li>
+			<li><a href="#1">HTTP/2</a></li>
+		</ul>
 	</section>
 
 	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+		<h2>Описание</h2>
+		<ul>
+			<li><a href="#1">SW, PWA with Polymer</a></li>
+			<li><a href="#1">Electron</a></li>
+			<li><a href="#1">High performance tricks: Web Workers, GPU computing and Web Assembly</a></li>
+			<li><a href="#1">GraphQL</a></li>
+			<li><a href="#1">Мой ванильный CSS</a></li>
+			<li><a href="#1">Shells written in JS</a></li>
+		</ul>
 	</section>
 
 	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
+		<p class="shout"><a href="https://www.youtube.com/watch?v=5Kw4XVSb4P4" target="_blank
+		">ES 2017 and&nbsp;beyond</a></p>
 	</section>
 
 	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
+		<h2>TC39 process</h2>
+		<ul>
+			<li>Stage 0: strawman</li>
+			<li>Stage 1: proposal</li>
+			<li>Stage 2: draft</li>
+			<li>Stage 3: candidate</li>
+			<li>Stage 4: finished</li>
+		</ul>
 	</section>
 
 	<section class="slide">
-		<h2>Code samples</h2>
-		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
+		<h2>ES 2016</h2>
+		<ul>
+			<li>Array.prototype.includes</li>
+			<code>[NaN].includes(NaN) // true</code><br>
+			<code>[NaN].indexOf(NaN) // -1</code>
+			<li>Exponential operator</li>
+			<code> Math.pow(2,3) === 2**3 // true</code>
+		</ul>
 	</section>
 
 	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
-	</section>
-
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<figure>
-			<img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
-			</figcaption>
-		</figure>
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
-		</style>
+		<h2>ES 2017</h2>
+		<ul>
+			<li>Async functions</li>
+			<li>Shared memory and atomics</li>
+			<li>Object.values / Objec.entries</li>
+			<li>String padding</li>
+			<li>Object.getOwnPropertyDescriptors()</li>
+			<li>Trailing commas in function parameter lists and calls</li>
+		</ul>
 	</section>
 
 	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
+		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_21.jpg">
 	</section>
 
 	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
+		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_29.jpg">
 	</section>
 
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
+	<section class="slide">
+		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_30.jpg">
 	</section>
 
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
-		<style>
-			#see-more h2 {
-				font-size:100px
-				}
-			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
-		</style>
+	<section class="slide">
+		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_31.jpg">
+	</section>
+
+	<section class="slide">
+		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_33.jpg">
+	</section>
+
+	<section class="slide">
+		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_34.jpg">
+	</section>
+
+	<section class="slide">
+		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_37.jpg">
+	</section>
+
+	<section class="slide">
+		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_38.jpg">
+	</section>
+
+	<section class="slide">
+		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_39.jpg">
+	</section>
+
+	<section class="slide">
+		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_40.jpg">
+	</section>
+
+	<section class="slide">
+		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_41.jpg">
+	</section>
+
+	<section class="slide">
+		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_42.jpg">
+	</section>
+
+	<section class="slide">
+		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_43.jpg">
+	</section>
+
+	<section class="slide">
+		<p class="shout"><a href="https://www.youtube.com/watch?v=whFhyHysYYg" target="_blank
+		">HTTP/2</a></p>
+	</section>
+
+	<section class="slide">
+		<img class="place" width="900px" src="pictures/http2.jpg">
+	</section>
+
+	<section class="slide">
+		<h2>Фичи</h2>
+		<ul>
+			<li>Мультиплексировние</li>
+			<li>Бинарный</li>
+			<li>Приоритеты</li>
+			<li>Сжатие заголовков (HPACK)</li>
+			<li>Server Push</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<img class="place" width="700px" src="pictures/http2_1.jpg">
+	</section>
+
+	<section class="slide">
+		<img class="place" width="700px" src="pictures/http2_2.jpg">
+	</section>
+
+	<section class="slide">
+		<h2>Проблемы</h2>
+		<ul>
+			<li>Packet loss (QUIC by Google)</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>CSS</h2>
+		<p>Load CSS in series</p>
+		<code>
+			&lt;link rel="stylesheet" href="header.css"&gt;<br>
+			&lt;header&gt;..&lt;/header&gt;<br>
+			&lt;link rel="stylesheet" href="main.css"&gt;<br>
+			&lt;main"&gt;..&lt;/main&gt;
+		</code>
+	</section>
+
+	<section class="slide">
+		<h2>JS</h2>
+		<p>Bunlde by frequency of change</p>
+		<p>Progressive booting(server side rendering)</p>
+	</section>
+
+	<section class="slide">
+		<h2>CSS</h2>
+		<p>Load CSS in series</p>
+		<code>
+			&lt;link rel="stylesheet" href="header.css"&gt;<br>
+			&lt;header&gt;..&lt;/header&gt;<br>
+			&lt;link rel="stylesheet" href="main.css"&gt;<br>
+			&lt;main&gt;..&lt;/main&gt;
+		</code>
+	</section>
+
+	<section class="slide">
+		<h2>Improving time-to-interactive</h2>
+		<ul>
+			<li>define priorities</li>
+			<li>tree-shaking - prod</li>
+			<li>chunks</li>
+			<li>defer > async</li>
+			<li>async fonts, WOFF2 or local with switch</li>
+			<li>dns prefetch</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Infrastructure</h2>
+		<ul>
+			<li>brotli/zopfli</li>
+			<li>OCSP stapling</li>
+			<li>HPACK</li>
+			<li>Service Workers</li>
+			<li>IPv6</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<p class="shout"><a href="https://www.youtube.com/watch?v=PPnmdIaP4jA" target="_blank
+		">SW, PWA with&nbsp;Polymer</a></p>
+	</section>
+
+	<section class="slide">
+		<p class="shout"><a href="https://www.youtube.com/watch?v=eQ9mSH4je0U" target="_blank
+		">Electron</p>
+	</section>
+
+	<section class="slide">
+		<p class="shout"><a href="https://www.youtube.com/watch?v=1_lX28QWCdg" target="_blank
+		">High performance tricks</a></p>
+	</section>
+
+	<section class="slide">
+		<p class="shout"><a href="https://www.youtube.com/watch?v=wyfSYJk_m9Q" target="_blank
+		">GraphQL</a></p>
+	</section>
+
+	<section class="slide">
+		<p class="shout"><a href="https://www.youtube.com/watch?v=jAAVN7SWqdk" target="_blank
+		">Мой ванильный&nbsp;CSS</a></p>
+	</section>
+
+	<section class="slide">
+		<p class="shout"><a href="https://www.youtube.com/watch?v=CGfnGczxKAI" target="_blank
+		">Shells written&nbsp;in JS</a></p>
 	</section>
 
 	<footer class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
+		<a href="https://github.com/shower/shower">Powered by Shower</a>
 	</footer>
 
 	<div class="progress"></div>
@@ -199,4 +276,5 @@
 	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
 
 </body>
+
 </html>
