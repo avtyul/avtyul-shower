@@ -2,279 +2,85 @@
 <html lang="en">
 
 <head>
-	<title>RS Conf 2017</title>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
-	<style>
-		.caption a {
-			color: #4b86c2;
-			text-shadow: 0 -1px 0 #1f3f60;
-		}
-
-	</style>
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
 </head>
 
 <body class="shower list">
+    <style>
+        .slide_when p,
+        .slide_who p {
+            font-size: 40px;
+        }
 
-	<header class="caption">
-		<h1>RS Conf 2017 recap</h1>
-		<p>
-			<a href="https://github.com/avtyul" target="_blank">Алексей Тюльдюков</a>
-		</p>
-	</header>
+    </style>
 
-	<section class="slide">
-		<img class="place" src="pictures/rs_logo.jpg" width="300px">
-		<p class="place" style="top: 520px">Минск '17</p>
-	</section>
+    <header class="caption">
+        <h1>Управление проектом и продуктом</h1>
+        <p>Команда VideoSearch: Вуколов, Нуруллин, Рукавишников, Тюльдюков</p>
+    </header>
 
-	<section class="slide">
-		<h2>Полезные ссылки</h2>
-		<ul>
-			<li><a href="https://2017.conf.rollingscopes.com/" target="_blank">https://2017.conf.rollingscopes.com/</a></li>
-			<li><a href="https://rollingscopes.com/" target="_blank">https://rollingscopes.com/</a></li>
-			<li><a href="https://www.youtube.com/user/therollingscopes" target="_blank">https://www.youtube.com/user/therollingscopes</a></li>
-		</ul>
-	</section>
+    <section class="slide slide_title" id="s1">
+        <h2 class="shout shrink">"Событийная"</h2>
+    </section>
+    <section class="slide slide_when" id="s2">
+        <h2>Когда</h2>
+        <p>Релиз новой версии нашего приложения:</p>
+        <p><strong>Telegram-клиента</strong></p>
+    </section>
+    <section class="slide slide_who" id="s3">
+        <h2>Кому</h2>
+        <p>Пользователям, не заходившим в наш сервис <strong>N</strong> дней.</p>
+        <p>Рассылка должна вернуть интерес к продукту.</p>
+    </section>
+    <section class="slide slide_pic" id="s4">
 
-	<section class="slide">
-		<h2>Подробно</h2>
-		<ul>
-			<li><a href="#5">ES 2016, 2017 and beyond</a></li>
-			<li><a href="#1">HTTP/2</a></li>
-		</ul>
-	</section>
+    </section>
+    <section class="slide slide_title" id="s5">
+        <h2 class="shout shrink">"Акционная"</h2>
+    </section>
+    <section class="slide slide_when" id="s6">
+        <h2>Когда</h2>
+        <p>Например, в "черную пятницу"</p>
+        <p>
+            <strike>Ну или когда не на что будет еду покупать</strike>
+        </p>
+    </section>
+    <section class="slide slide_who" id="s7">
+        <h2>Кому</h2>
+        <p><strong>Всем</strong> юзерам, которые подписались на нашу рассылку</p>
+        <p>Да, <strong>всем</strong>, потому что мы заинтересованы в получении дохода</p>
+    </section>
+    <section class="slide slide_pic" id="s8">
 
-	<section class="slide">
-		<h2>Описание</h2>
-		<ul>
-			<li><a href="#32">SW, PWA with Polymer</a></li>
-			<li><a href="#33">Electron</a></li>
-			<li><a href="#37">High performance tricks: Web Workers, GPU computing and Web Assembly</a></li>
-			<li><a href="#38">GraphQL</a></li>
-			<li><a href="#39">Мой ванильный CSS</a></li>
-			<li><a href="#40">Shells written in JS</a></li>
-		</ul>
-	</section>
+    </section>
+    <section class="slide slide_title" id="s9">
+        <h2 class="shout shrink">"Оставить отзыв"</h2>
+    </section>
+    <section class="slide slide_when" id="s10">
+        <h2>Когда</h2>
+        <p>После первых <strong>N</strong> запросов, прямо внутри сервиса</p>
+        <p>Важно правильно подобрать это число, чтобы <strong>не спугнуть</strong> пользователя</p>
+    </section>
+    <section class="slide slide_who" id="s11">
+        <h2>Кому</h2>
+        <p>Всем активным юзерам, которые умудрились <strong>целых N раз</strong> воспользоваться нашим крутым сервисом
+    </section>
+    <section class="slide slide_pic" id="s12">
 
-	<section class="slide">
-		<p class="shout"><a href="https://www.youtube.com/watch?v=5Kw4XVSb4P4" target="_blank
-		">ES 2017 and&nbsp;beyond</a></p>
-	</section>
+    </section>
 
-	<section class="slide">
-		<h2>TC39 process</h2>
-		<ul>
-			<li>Stage 0: strawman - идея</li>
-			<li>Stage 1: proposal - герой, проблема, реализация</li>
-			<li>Stage 2: draft - описание синтаксиса, 2 реализации, бабель</li>
-			<li>Stage 3: candidate - эволюция, фидбек</li>
-			<li>Stage 4: finished - Test262</li>
-		</ul>
-	</section>
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
 
-	<section class="slide">
-		<h2>ES 2016</h2>
-		<ul>
-			<li>Array.prototype.includes</li>
-			<code>[NaN].includes(NaN) // true</code><br>
-			<code>[NaN].indexOf(NaN) // -1</code>
-			<li>Exponential operator</li>
-			<code> Math.pow(2,3) === 2**3 // true</code>
-		</ul>
-	</section>
+    <div class="progress"></div>
 
-	<section class="slide">
-		<h2>ES 2017</h2>
-		<ul>
-			<li>Async functions</li>
-			<li>Shared memory and atomics</li>
-			<li>Object.values / Objec.entries</li>
-			<li>String padding</li>
-			<li>Object.getOwnPropertyDescriptors()</li>
-			<li>Trailing commas in function parameter lists and calls</li>
-		</ul>
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_21.jpg">
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_29.jpg">
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_30.jpg">
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_31.jpg">
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_33.jpg">
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_34.jpg">
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_37.jpg">
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_38.jpg">
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_39.jpg">
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_40.jpg">
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_41.jpg">
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_42.jpg">
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="https://speakerd.s3.amazonaws.com/presentations/3853eb39a5a44cffa8b5f4ec70e1abde/slide_43.jpg">
-	</section>
-
-	<section class="slide">
-		<p class="shout"><a href="https://www.youtube.com/watch?v=whFhyHysYYg" target="_blank
-		">HTTP/2</a></p>
-	</section>
-
-	<section class="slide">
-		<img class="place" width="900px" src="pictures/http2.jpg">
-	</section>
-
-	<section class="slide">
-		<h2>Фичи</h2>
-		<ul>
-			<li>Мультиплексировние</li>
-			<li>Бинарный</li>
-			<li>Приоритеты</li>
-			<li>Сжатие заголовков (HPACK)</li>
-			<li>Server Push</li>
-		</ul>
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="pictures/http2_1.jpg">
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="pictures/http2_2.jpg">
-	</section>
-
-	<section class="slide">
-		<h2>Проблемы</h2>
-		<ul>
-			<li>Packet loss (QUIC by Google)</li>
-		</ul>
-	</section>
-
-	<section class="slide">
-		<h2>JS</h2>
-		<p>Bunlde by frequency of change</p>
-		<p>Progressive booting(server side rendering)</p>
-	</section>
-
-	<section class="slide">
-		<h2>CSS</h2>
-		<p>Load CSS in series</p>
-		<code>
-			&lt;link rel="stylesheet" href="header.css"&gt;<br>
-			&lt;header&gt;..&lt;/header&gt;<br>
-			&lt;link rel="stylesheet" href="main.css"&gt;<br>
-			&lt;main&gt;..&lt;/main&gt;
-		</code>
-	</section>
-
-	<section class="slide">
-		<h2>Improving time-to-interactive</h2>
-		<ul>
-			<li>define priorities</li>
-			<li>tree-shaking - prod</li>
-			<li>chunks</li>
-			<li>defer > async</li>
-			<li>async fonts, WOFF2 or local with switch</li>
-			<li>dns prefetch</li>
-		</ul>
-	</section>
-
-	<section class="slide">
-		<h2>Infrastructure</h2>
-		<ul>
-			<li>brotli/zopfli</li>
-			<li>OCSP stapling</li>
-			<li>HPACK</li>
-			<li>Service Workers</li>
-			<li>IPv6</li>
-		</ul>
-	</section>
-
-	<section class="slide">
-		<p class="shout"><a href="https://www.youtube.com/watch?v=PPnmdIaP4jA" target="_blank
-		">SW, PWA with&nbsp;Polymer</a></p>
-	</section>
-
-	<section class="slide">
-		<p class="shout"><a href="https://www.youtube.com/watch?v=eQ9mSH4je0U" target="_blank
-		">Electron</a></p>
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="pictures/electron_1.png">
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="pictures/electron_2.png">
-	</section>
-
-	<section class="slide">
-		<img class="place" width="700px" src="pictures/electron_3.png">
-	</section>
-
-	<section class="slide">
-		<p class="shout"><a href="https://www.youtube.com/watch?v=1_lX28QWCdg" target="_blank
-		">High performance tricks</a></p>
-	</section>
-
-	<section class="slide">
-		<p class="shout"><a href="https://www.youtube.com/watch?v=wyfSYJk_m9Q" target="_blank
-		">GraphQL</a></p>
-	</section>
-
-	<section class="slide">
-		<p class="shout"><a href="https://www.youtube.com/watch?v=jAAVN7SWqdk" target="_blank
-		">Мой ванильный&nbsp;CSS</a></p>
-	</section>
-
-	<section class="slide">
-		<p class="shout"><a href="https://www.youtube.com/watch?v=CGfnGczxKAI" target="_blank
-		">Shells written&nbsp;in JS</a></p>
-	</section>
-
-	<footer class="badge">
-		<a href="https://github.com/shower/shower">Powered by Shower</a>
-	</footer>
-
-	<div class="progress"></div>
-
-	<script src="shower/shower.min.js"></script>
-	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
+    <script src="shower/shower.min.js"></script>
+    <!-- Copyright © 2017 Yours Truly, Famous Inc. -->
 
 </body>
 
